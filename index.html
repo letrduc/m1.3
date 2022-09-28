@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>m1.3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header_content">
+        <div class="header_logo">
+          <a
+            href="https://store.steampowered.com/?snr=1_4_4__global-responsive-menu"
+          >
+            <img
+              src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_logo.png"
+              height="36"
+              alt="STEAM"
+            />
+          </a>
+        </div>
+        <h3 id="displayTitle">STORE</h3>
+        <div class="nav_links">
+          <li>Home</li>
+          <li>Trending</li>
+          <li>About us</li>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="top"></div>
+      <div id="tilefggame">FEATURED & RECOMMENDED</div>
+
+      <div id="main">
+        <div class="search_area">
+          <div id="store_search">
+            <form name="searchForm">
+              <div class="searchbox">
+                <input
+                  id="searchForm"
+                  name="searchForm"
+                  type="text"
+                  class="default"
+                  placeholder="search"
+                  size="22"
+                  maxlength="64"
+                />
+                <div id="store_search_link">
+                  <img
+                    src="https://store.cloudflare.steamstatic.com/public/images/blank.gif"
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="category">
+              <ul class="categoryGroup" id="categoryGroupbtn"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="games">
+          <div id="progress">Chờ xí...</div>
+          <div class="showing_game" id="display"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

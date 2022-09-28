@@ -1,0 +1,231 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  color: #c6d4df;
+  background: url(/public/images/v6/colored_body_top.png?v=2) center top
+    no-repeat #1b2838;
+}
+
+#store_search {
+  min-width: 250px;
+}
+
+#game-plf-detail {
+  margin-top: 32px;
+}
+
+.game-plf {
+  padding: 8px;
+  border: solid 1px #fff;
+}
+
+#game-tag-detail {
+  margin-top: 16px;
+}
+
+.game-tag {
+  padding: 8px;
+  border: solid 1px #fff;
+}
+
+.search_area {
+  padding: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+#tilefggame {
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  color: white;
+}
+
+#progress {
+  display: none;
+  margin-top: 32px;
+  color: blue;
+  font-size: 35px;
+}
+
+img {
+  border: none;
+}
+
+#top {
+  height: 250px;
+  padding: 35px;
+  margin-left: 39px;
+}
+
+header {
+  background: #171a21;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+  padding: 1em 0.5em;
+  margin-bottom: 1em;
+  z-index: 20;
+}
+
+.header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#displayTitle {
+  cursor: pointer;
+}
+
+.nav_links {
+  display: flex;
+  gap: 2em;
+  margin-right: 16px;
+  list-style: none;
+  cursor: pointer;
+  /* justify-content: end; */
+}
+.nav_links li:hover {
+  filter: brightness(300%);
+}
+
+#header_search_btn {
+  position: absolute;
+  top: 9px;
+  cursor: pointer;
+  width: 36px;
+  height: 31px;
+}
+
+.search_area {
+  float: left;
+  width: 22%;
+  margin-left: 16px;
+  height: auto;
+}
+
+div#store_search {
+  float: none;
+  padding: 3px 4px 2px;
+  height: 30px;
+  width: 120px;
+}
+
+.searchbox {
+  background-image: none;
+  background-color: #316282;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 0px rgb(255 255 255 / 20%);
+  color: #fff;
+  margin-bottom: 0px;
+  outline: none;
+  height: 27px;
+  padding: 0px 6px;
+  position: relative;
+}
+
+.searchbox input {
+  border: none;
+  background-color: transparent;
+  color: #eeeeee;
+  margin-top: 2px;
+  margin-left: 8px;
+  outline: none;
+  line-height: 26px;
+}
+
+.searchbox input.default {
+  color: #ebeef0;
+  font-size: 15px;
+  margin-top: 1px;
+  text-shadow: 1px 1px 0px rgb(255 255 255 / 10%);
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: 300;
+}
+
+#store_search_link img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 0;
+  background-image: url(https://store.cloudflare.steamstatic.com/public/images/v6/search_icon_btn.png);
+}
+
+#store_search_link img:hover {
+  filter: brightness(150%);
+}
+
+main #store_search .category ul {
+  color: #66c0f4;
+  list-style-type: none;
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 2px solid #316282;
+  cursor: pointer;
+}
+main #store_search .category ul li {
+  padding-bottom: 1em;
+}
+
+main #store_search .category li:hover {
+  filter: brightness(200%);
+  background-color: #1f4c6a;
+  border-radius: 4px;
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+/* main .featured_game {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+} */
+
+.showing_game {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+  width: 300px;
+  height: auto;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.grid-item img {
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+
+.fg-grid-item {
+  display: flex;
+  width: 300px;
+  height: auto;
+  margin: 16px;
+}
+
+.fg-grid-item img {
+  display: flex;
+  width: 300px;
+  height: auto;
+}
